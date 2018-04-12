@@ -13,7 +13,29 @@ h2 {
 }
 #BUT_Title h3 {
     width: 100px;
+    height: 1.3rem;
     border: thin solid #0614AB;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    clear: left;
+}
+#BUT_Title h3 li {
+    height: 1rem;
+}
+div.nopadmargin {
+    height: 2.5rem;
+    box-sizing: border-box;
+}
+.nopadmargin {
+    padding: 0 0 0 0;
+    margin: 0 0;
+}
+.inlineblock{
+    display: inline-block;
+}
+.nolist {
+    list-style: none;
 }
 #BUT_Title h3:hover {
     background: #DC9D34;
