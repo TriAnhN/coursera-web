@@ -2,6 +2,13 @@ body {
     background: url(img/background.lg.jpg);
     font-family:Arial, Helvetica, sans-serif;
 }
+header {
+    display:block;
+    position: relative;
+}
+header .title1 {
+    position: absolute;
+}
 ul#BUT_Title {
     color: #063BA4;
 }
