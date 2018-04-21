@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+	
 }
 h1 {
     text-align: center;
@@ -10,21 +11,22 @@ h2 {
 section{
     /* margin: 10px; */
     padding: 10px;
-    position: relative;
 }
 section div {
     background-color: gray;
-}
-
+	position: relative;
+	}
 p{
     margin: 10px;
-    clear: both;
 }
-section h2{
-    position: absolute;
-    top: 0px;
-    right: 20px;
-    clear: both;
+section div h2 {
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+}
+section div p {
+	position: absolute;
+	top: 40px;
 }
 
 
