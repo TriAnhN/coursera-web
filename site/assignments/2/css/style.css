@@ -16,7 +16,8 @@ section{
 .container h2 {
     background-color:whitesmoke;
     margin: 0rem;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     width: 7.5rem;
     color: brown;
     padding: 0.2rem;
