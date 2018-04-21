@@ -1,55 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
-    background: url(img/background.lg.jpg);
+    background-image: url(img/background.lg.jpg);
+    background-size: auto;
     font-family:Arial, Helvetica, sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-header {
-    display:block;
-    position: relative;
+header div {
+    background-color: white;
+    padding-bottom: 0.7rem;
+    margin-bottom: 7rem;
 }
-header .title1 {
-    position: absolute;
+header div::after {
+    content: ".";
+    clear: both;
+    height: 0rem;
+    display: block;
+    line-height: 0rem;
+    visibility: hidden;
 }
-ul#BUT_Title {
-    color: #063BA4;
+header h1 {
+    float: left;
+    padding-left: 0.9rem;
 }
-h2 {
-    color:aliceblue;
-}
-#Bookyourtrip>div {
-    font-style: italic;
-}
-#BUT_Title h3 {
-    width: 100px;
-    height: 1.3rem;
-    border: thin solid #0614AB;
-    border-radius: 20px;
-    text-align: center;
-    padding: 0px 0px 0px 0px;
-    clear: left;
-}
-#BUT_Title h3 li {
-    height: 1rem;
-}
-div.nopadmargin {
-    height: 2.5rem;
-    box-sizing: border-box;
-}
-.nopadmargin {
-    padding: 0 0 0 0;
-    margin: 0 0;
-}
-.inlineblock{
-    display: inline-block;
-}
-.nolist {
+header li {
     list-style: none;
+    padding: 0.5rem;
+    float: right;
 }
-#BUT_Title h3:hover {
-    background: #DC9D34;
+header li a{
+    text-decoration: none;
 }
-.bold {
-    font-weight: bold;
+.bookyourtrip {
+    clear: both;
+    float: left;
 }
-#Logo img {
-    background: #FFFFFF
+.bookyourtrip h2, .managemybooking h2 {
+    background-color:rgb(22, 105, 135);
+    width: 13rem;
+    border: 1px solid rgb(219, 165, 17);
+    color: aliceblue;
+    font-size: 1.3rem;
+    padding: 0.2rem 0.25rem;
+    margin: 0.5rem;
+}
+.bookyourtrip .title1 {
+    margin: 0.5rem 0.5rem 0.7rem 0.5rem;
+}
+.bookyourtrip .title1 li {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #206a90;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    display: inline;
+    margin: 0.2rem 0rem;
+}
+.bookyourtrip .title1 li h3{
+    display: inline;
+}
+.route .from {
+    float: left;
+}
+.route li{
+    list-style: none;
+    background-color: white;
+    border: 1px solid black;
+    width: 7rem;
+}
+.route .to {
+    float: right;
+
+}
+.passenger {
+    clear: both;
+}
+
+
+
+.managemybooking {
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+/* Extra large col-xl*/
+/* @media (min-width: 1200px) {
+    .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+        float: left;
+        border: 1px solid green;
+    }
+    .col-xl-1 {
+        width: 8.33%;
+    }
+    .col-xl-2 {
+        width: 16.66%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.33%;
+    }
+    .col-xl-5 {
+        width: 41.66%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.33%;
+    }
+    .col-xl-8 {
+        width: 66.66%;
+    }
+    .col-xl-9 {
+        width: 74.99%;
+    }
+    .col-xl-10 {
+        width: 83.33%;
+    }
+    .col-xl-11 {
+        width: 91.66%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
+} */
+
+/*Large col-lg*/
+@media (min-width: 992px) /*and (max-width: 1199px)*/ {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+        /* border: 1px solid green; */
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+/********** Medium col-md **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+        /* border: 1px solid green; */
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+/********** Small col-sm **********/
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+        /* border: 1px solid green; */
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 74.99%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
 }
