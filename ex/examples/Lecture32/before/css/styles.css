@@ -46,3 +46,10 @@ body {
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
+#nav-list {
+  color: #61122f;
+  text-align: center;
+}
+#nav-list a:hover {
+  background-color: white;
+}
