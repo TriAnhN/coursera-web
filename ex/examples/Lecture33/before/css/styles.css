@@ -82,4 +82,17 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
-
+@media (min-width:992px) and (max-width:1199px) {
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+}
+@media  (max-width:767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+}
