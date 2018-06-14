@@ -110,6 +110,70 @@ body {
 
 /* END HOME PAGE */
 
+/* Content*/
+
+#menutile, #specialtile, #maptitle {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#menutile {
+  background: url("../images/menu-tile.jpg") no-repeat;
+  background-position: center;
+}
+#specialtile {
+  background: url("../images/specials-tile.jpg") no-repeat;
+  background-position: center;
+}
+#menutile:hover, #specialtile:hover, #maptitle:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/*content button*/
+
+#main-content #menutile span,#specialtile span,#maptitle span {
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+/* footer*/
+.footer-panel {
+  background-color: black;
+  padding: 35px;
+}
+.footer-panel .row{
+  margin-bottom: 35px;
+}
+
+#hour span, #address span, #comment span{
+  font: 1.5em bold;
+  
+}
+#comment p{
+  font-style: italic;
+}
+#address p{
+  font-size: 0.8em;
+  color: green;
+}
+.footer-panel section{
+  text-align: center;
+  line-height: 2em;
+}
+.footer-panel hr {
+  width:50%
+}
 /********** Large devices only **********/
 
 @media (min-width: 1200px) {
@@ -138,39 +202,6 @@ body {
   /* End Home Page */
 }
 
-/* Content*/
-
-#menutile, #specialtile, #maptitle {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  border: 2px solid white;
-}
-#menutile {
-  background-image: url("../images/menu-tile.jpg");
-}
-#specialtile {
-  background-image: url("../images/specials-tile.jpg");
-}
-#menutile:hover, #specialtile:hover, #maptitle:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-/*content button*/
-
-#main-content #menutile span,#specialtile span,#maptitle span {
-  background-color: #000;
-  opacity: 0.8;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 15%;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.6em;
-}
 
 /********** Small devices only **********/
 
@@ -236,4 +267,14 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+  #menutile, #specialtile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+@media (max-width:400px) {
+  #menutile, #specialtile {
+    width: 280px;
+    margin: 0 auto 15px;
+  } 
 }
