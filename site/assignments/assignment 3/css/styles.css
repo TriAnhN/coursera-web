@@ -1,4 +1,12 @@
-#main-content section{
+#main-content section div{
+    margin-bottom: 10px;
+
+}
+.maincontent {
+    padding: 10px;
     background-color: grey;
     border: 1px solid black;
+}
+h4 {
+    font-weight: bold;
 }
