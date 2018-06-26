@@ -1,4 +1,4 @@
-// ***** String concatination
+/* // ***** String concatination
 var string = "Hello";
 // string += " World";
 string = string + " World";
@@ -43,10 +43,10 @@ else {
 }
 
 
+ */
 
 
-
-
+/* 
 // ***** If statement (all false)
 if ( false || null || 
      undefined || "" || 0 || NaN) {
@@ -60,10 +60,10 @@ else {
 if (true && "hello" && 1 && -1 && "false") {
   console.log("All true");
 }
+ */
 
 
-
-
+/* 
 
 // ***** Best practice for {} style
 // Curly brace on the same or next line...
@@ -84,7 +84,7 @@ function b() {
 
 console.log(a());
 console.log(b());
-
+ */
 
 // For loop
 var sum = 0;
