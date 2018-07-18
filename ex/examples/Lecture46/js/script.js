@@ -10,6 +10,7 @@ console.log(multiply.version);
 // Function factory
 function makeMultiplier(multiplier) {
   var myFunc = function (x) {
+    console.log("Multiplier: "+multiplier);
     return multiplier * x;
   };
 
@@ -17,9 +18,9 @@ function makeMultiplier(multiplier) {
 }
 
 var multiplyBy3 = makeMultiplier(3);
-console.log(multiplyBy3(10));
+// console.log(multiplyBy3(10));
 var doubleAll = makeMultiplier(2);
-console.log(doubleAll(100));
+// console.log(doubleAll(100));
 
 
 
