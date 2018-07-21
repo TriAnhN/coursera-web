@@ -1,8 +1,9 @@
 // Event handling
 document.addEventListener("DOMContentLoaded",
   function (event) {
-    
+    console.log(event);
     function sayHello (event) {
+      console.log(event);
       this.textContent = "Said it!";
       var name =
        document.getElementById("name").value;

@@ -60,7 +60,7 @@
 //   var multiplyBy3 = makeMultiplier(3);
 
 x = window.prompt("Nhập a: ");
-function ktsnt(x) {
+function Function1(x) {
     var result = true;
     if (x < 2) {
         result = false;
@@ -74,4 +74,4 @@ function ktsnt(x) {
     };
     if (result) { console.log("Khong phai so nguyen to") } else { console.log("So nguyen to") };
 };
-ktsnt(x);
+Function1(x);
