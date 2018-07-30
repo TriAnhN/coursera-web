@@ -6,7 +6,7 @@ function sayHello () {
   var name =
    document.getElementById("name").value;
    var message = "<h2>Hello " + name + "!</h2>";
-
+  console.log("chk z");
   // document
   //   .getElementById("content")
   //   .textContent = message;
@@ -14,7 +14,7 @@ function sayHello () {
   document
     .getElementById("content")
     .innerHTML = message;
-
+  console.log("chk 0");
   if (name === "student") {
     var title = 
       document
@@ -25,4 +25,8 @@ function sayHello () {
         .querySelector("h1")
         .textContent = title;
   }
+  console.log("chk 1");
 }
+console.log("chk 2");
+    document.querySelector("button")
+      .addEventListener("click", sayHello);
