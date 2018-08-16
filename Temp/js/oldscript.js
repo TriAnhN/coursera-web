@@ -72,3 +72,11 @@
 // };
 // if (result) { document.write("Khong phai so nguyen to") } else { document.write("So nguyen to") };
 // ***check so nguyen to
+        // Lap danh sach so nguyen to
+        for (var i = 3; i <= n; i++) {
+            var check = true;
+            for (var j = 0; j + 1 <= x.length; j++) {
+                if (i % x[j] == 0) { check = false; }
+            }
+            if (check) { x.push(i) };
+        }
