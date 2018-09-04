@@ -1,15 +1,29 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     function F1(event) {
-        document.getElementById("Title1").textContent = "In so xoan oc";
-        result= "";
-        var n = window.prompt("Nhap n");
-        var v = 0;	 //v - value
-        while ( v<Math.pow(n) ) { 
-        	for (var i = 0; i<n;i+w){
-        		w = 1;
-        		j = 0
-        		x[i][j] = v;
-        	}
+        document.getElementById("Title1").textContent = "Mua dien thoai";
+        result = "";
+        var bank = window.prompt("Nhap so tien trong tk");
+        var price = window.prompt("Nhap so tien mot chiec dien thoai");
+        var acc = window.prompt("Nhap so tien mot phu kien dien thoai");
+        var taxrate = window.prompt("% thue");
+
+        function tax(y, r) {
+            return y * (1 + r)
+        }
+
+        function chkprice(x, y, z, r) {
+            if (tax((y + z), r) <= x) {
+                console.log("Mua dien thoai + pk")
+            } else if (tax((y), r) <= x) {
+                console.log("Mua dien thoai")
+            } else {
+                console.log("Trong tai khoan hien co: " + x + " khong du tien mua dien thoai")
+                break;
+            }
+        }
+        while (x > 0) {
+            chkprice(bank, price, acc, taxrate)
+
         }
         document.getElementById("content1").innerHTML = "Result: " + result;
     } // end funtion 1
