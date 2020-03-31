@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+/*document.addEventListener("DOMContentLoaded", function (event) {
     function F1(event) {
         document.getElementById("Title1").textContent = "Mua dien thoai";
         result = "";
@@ -39,6 +39,74 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 });
-
+*/
 // x = window.prompt("Nhập x: ");
 // y = window.prompt("Nhap y: ");
+
+/* function giveEms(px) {
+    var baseValue= 16;
+    return function dothemath(y) {
+        return px/baseValue*y;
+    }
+}
+console.log(giveEms(30)(10));
+console.log(giveEms(20)(100));
+console.log(giveEms(30)(100));
+
+function abc(x) {
+    var a = x/2;
+    function cde() {
+        return a/5
+    }
+    return cde();
+}
+console.log(abc(20));
+
+var counter = (function () {
+    var privatecounter = 0;
+    function changeby(val) {
+        privatecounter+=val;
+    }
+    return {
+        increment : function (){
+            changeby(1);
+        },
+        decrement :function () {
+            changeby(-1);
+        },
+        value: function () {
+            return privatecounter;
+        }
+    };
+})();
+console.log(counter.value()); // logs 0
+counter.increment();
+counter.increment();
+console.log(counter.value()); // logs 2
+counter.decrement();
+console.log(counter.value()); // logs 1
+
+
+function numberGenerator() {
+    // Local “free” variable that ends up within the closure
+    var num = 1;
+    function checkNumber() {
+      console.log(num);
+    }
+    num++;
+  
+    return checkNumber;
+  }
+  
+  var number = numberGenerator();
+  number(); // 2 */
+
+
+
+
+
+  var request = new XMLHttpRequest();
+  request.open("GET", "route.json", false);
+  request.send(null)
+  var my_JSON_object = JSON.parse(request.responseText);
+  console.log(my_JSON_object.result[0]);
